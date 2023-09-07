@@ -1,0 +1,105 @@
+.navp {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    background-color: #ffffff !important;
+    display: block;
+    z-index: 101;
+    position: relative;
+    top:11px;
+    margin: 0 auto;
+}
+
+.navp
+p {
+ /*    background-color: #C5797D; */
+   
+    height: 10px;
+    z-index: 100;
+    position: relative;
+    top: -10px;
+    margin-bottom:10px;
+}
+nav {
+    width: 1300px !important;
+    position: relative;
+    top: -20px;
+    width: 85%;
+    margin: 0 auto;
+    
+
+    
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.secondeLi {
+    display: none;
+    height: 100px;
+    position: absolute;
+}
+
+.secondeLi a {
+    display: block;
+    width: 100px !important;
+    z-index: 100;
+    position: relative;
+}
+
+/* .firstLi li:nth-child(1) {
+	
+} */
+
+.firstLi {
+    position: absolute;
+    width: 100px;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 0!important;
+}
+
+.firstLi a {
+    height: 65px;
+    line-height: 65px;
+    display: inline-block;
+    width: 100px;
+   
+}
+
+.firstLi a span {
+    height: 65px;
+    line-height: 65px;
+    display: inline-block;
+}
+
+.firstLi:hover .secondeLi {
+    display: block;
+}
+
+
+.firstLi:hover .secondeLi a {
+    background-color: #72040B;
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+.firstLi:hover a {
+    background-color: #72040B;
+    color: #FFF !important;
+}
+
+.secondeLi a:hover {
+    background-color: #acacac !important;
+
+}
+
+@media screen and (max-width: 1200px){
+    .navp{
+width: 100vw !important;
+top:-10px !important;
+
+    }
+}
