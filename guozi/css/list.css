@@ -726,7 +726,7 @@ p {
   height: 80px;
   text-align: center;
   line-height: 80px;
-  background: #0b71e3;
+
   color: #fff;
 }
 
@@ -810,6 +810,7 @@ p {
   z-index: 99;
   left: 0;
   background: #fff;
+  color: royalblue;
 }
 
 .son-col-name .grey-xian {
@@ -958,7 +959,7 @@ p {
 
 .list ul li:hover {
   color: #fff;
-  background: #72040B url(../images/white-squre.png) no-repeat 20px center;
+  background: royalblue url(../images/white-squre.png) no-repeat 20px center;
 }
 
 .list ul li:hover a {
