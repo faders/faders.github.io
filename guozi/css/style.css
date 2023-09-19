@@ -4,12 +4,19 @@ body {
 	font-size: 16px;
 }
 
+/*网站统一颜色背景*/
+
+.uniform_color{
+	background-color: #005ebb !important;
+
+}
+
 /*头部样式*/
 
 header {
 	height: 240px;
 	width: 100%;
-
+	background-color: RoyalBlue;
 }
 
 /* header nav ul.menu {
@@ -221,13 +228,13 @@ header .container:before {
 	margin-right: 16px;
 }
 
-.footer {
-	background: #fff;
-}
+/*.footer {
+	background: #005ebb;
+}*/
 
-.footer .pre_footer {
-	background: #11292f;
-	border-radius: 5px
+.footer,.pre_footer {
+	background-color: #005ebb;
+/*	border-radius: 5px;*/
 }
 
 .footer .col-md-4:first-child {
@@ -242,8 +249,6 @@ header .container:before {
 .pre_footer .widget_text a {
 	color: #417E8E;
 }
-
-
 
 
 
@@ -880,7 +885,7 @@ input[type="submit"] {
 	padding-left: 11px;
 	margin-bottom: 0;
 	position: relative;
-	background-color: #72040B;
+	background-color: #005ebb;
 
 
 }
@@ -964,8 +969,8 @@ input[type="submit"] {
 
         width: auto;
 	color: white;
-	background: #B22222;
-        border-bottom: 3px solid #F9C49E;
+	background: #1E90FF;
+        border-bottom: 3px solid #FF6A6A;
 }
 
 
