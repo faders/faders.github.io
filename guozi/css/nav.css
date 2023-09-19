@@ -80,14 +80,14 @@ nav {
 
 
 .firstLi:hover .secondeLi a {
-    background-color: #72040B;
+    background-color: #005ebb;
     display: block;
     color: #fff;
     text-align: center;
 }
 
 .firstLi:hover a {
-    background-color: #72040B;
+    background-color: #005ebb;
     color: #FFF !important;
 }
 
