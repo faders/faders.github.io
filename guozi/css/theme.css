@@ -3323,17 +3323,17 @@ blockquote:before {
 
 /* F O O T E R */
 
-.footer {
-	background: #005ebb !important;
+/*.footer {
+	background: #72040B !important;
 
-}
+}*/
 
 .pre_footer {
 	border-bottom: 1px #494c52 solid;
 	line-height: 21px;
 	padding-top: 54px;
 	padding-bottom: 27px;
-	background-color: #005ebb !important;
+/*	background-color: #72040B !important;*/
 
 }
 

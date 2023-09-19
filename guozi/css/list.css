@@ -810,7 +810,7 @@ p {
   z-index: 99;
   left: 0;
   background: #fff;
-  color: royalblue;
+  color: #005ebb ;
 }
 
 .son-col-name .grey-xian {
@@ -959,7 +959,7 @@ p {
 
 .list ul li:hover {
   color: #fff;
-  background: royalblue url(../images/white-squre.png) no-repeat 20px center;
+  background: #005ebb url(../images/white-squre.png) no-repeat 20px center;
 }
 
 .list ul li:hover a {

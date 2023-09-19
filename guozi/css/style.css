@@ -232,9 +232,9 @@ header .container:before {
 	background: #005ebb;
 }
 
-.footer  .pre_footer {
+.footer .pre_footer {
 	background-color: #005ebb;
-	border-radius: 5px;
+/*	border-radius: 5px;*/
 }
 
 .footer .col-md-4:first-child {
