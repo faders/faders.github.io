@@ -64,6 +64,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    height: 100%;
 }
 
 .header-left {
@@ -883,9 +884,9 @@ ul {
 
 @media (max-width: 768px) {
     .top-header {
-        height: 105px;
+        height: 80px;
         padding: 0;
-        line-height: 105px;
+        line-height: 80px;
     }
     
     .top-header .container {
@@ -894,19 +895,27 @@ ul {
         align-items: center;
         gap: 0;
         width: 90%;
+        height: 100%;
     }
     
     .header-left {
         flex-direction: row;
         text-align: left;
+        gap: 10px;
+        flex: 1;
+        min-width: 0;
     }
     
     .header-logo {
-        height: 60px;
+        height: 50px;
+        flex-shrink: 0;
     }
     
     .header-title {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 1.2;
+        flex-shrink: 1;
+        min-width: 0;
     }
     
     .header-right {
@@ -1024,7 +1033,7 @@ ul {
     }
     
     .banner-section {
-        margin-top: 105px;
+        margin-top: 80px;
     }
     
     .nav-toggle {
