@@ -63,12 +63,48 @@
   }
 
   /* ===== 移动端菜单 ===== */
-  var navItems = document.querySelectorAll('.wp_nav .has-sub');
-  navItems.forEach(function(item) {
-    item.addEventListener('click', function(e) {
+  var navMod = document.querySelector('.nav-mod');
+  var navToggle = document.getElementById('navToggle');
+
+  if (navMod && navToggle) {
+    navToggle.addEventListener('click', function() {
+      var open = navMod.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', open ? '收起导航' : '展开导航');
+    });
+
+    // 点击导航以外区域收起
+    document.addEventListener('click', function(e) {
+      if (window.innerWidth > 750) return;
+      if (navMod.classList.contains('open') && !navMod.contains(e.target)) {
+        navMod.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // 回到桌面尺寸时复位
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 750 && navMod.classList.contains('open')) {
+        navMod.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // 移动端二级菜单：手风琴展开
+  var navItems = document.querySelectorAll('.wp_nav > .has-sub');
+  Array.prototype.forEach.call(navItems, function(item) {
+    var link = item.querySelector('a');
+    if (!link) return;
+    link.addEventListener('click', function(e) {
       if (window.innerWidth <= 750) {
         e.preventDefault();
-        item.classList.toggle('open');
+        e.stopPropagation();
+        var wasOpen = item.classList.contains('open');
+        Array.prototype.forEach.call(navItems, function(other) {
+          if (other !== item) other.classList.remove('open');
+        });
+        item.classList.toggle('open', !wasOpen);
       }
     });
   });
