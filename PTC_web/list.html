@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>下载中心 - 平台与实验室管理处 - 长江大学</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="x-header">
+    <div class="menu-head">
+      <div class="x-wrap">
+        <div class="logo">
+          <a href="index.html" class="logo-inner">
+            <div class="badge">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="none" stroke="#1a4b8c" stroke-width="3"/>
+                <circle cx="50" cy="50" r="40" fill="#1a4b8c"/>
+                <text x="50" y="44" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold" font-family="serif">长江</text>
+                <text x="50" y="68" text-anchor="middle" fill="#fff" font-size="11" font-family="serif">YANGTZE</text>
+              </svg>
+            </div>
+            <div class="name">
+              <div class="cn">长江大学</div>
+              <div class="en">YANGTZE UNIVERSITY</div>
+            </div>
+            <div class="dept">平台与实验室管理处</div>
+            <div class="slogan">
+              <div class="line">科学管理&nbsp;&nbsp;优质服务</div>
+              <div class="line">传承创新&nbsp;&nbsp;追求卓越</div>
+            </div>
+          </a>
+        </div>
+        <div class="toolbox">
+          <div class="date" id="currentDate">2026年10月25日 星期日</div>
+          <div class="searchbox">
+            <input type="text" id="keyword" placeholder="请输入关键字">
+            <button class="submit" onclick="doSearch()" aria-label="搜索">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#666" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-mod">
+      <div class="head-tab">
+        <ul class="wp_nav">
+          <li class="nav-item"><a href="index.html"><span class="item-name">首页</span></a></li>
+          <li class="nav-item has-sub">
+            <a href="javascript:;"><span class="item-name">部门概况</span></a>
+            <ul class="sub-nav">
+              <li><a href="about.html"><span class="item-name">部门简介</span></a></li>
+              <li><a href="about.html"><span class="item-name">机构设置</span></a></li>
+              <li><a href="about.html"><span class="item-name">岗位职责</span></a></li>
+              <li><a href="about.html"><span class="item-name">联系我们</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub">
+            <a href="javascript:;"><span class="item-name">管理制度</span></a>
+            <ul class="sub-nav">
+              <li><a href="javascript:;"><span class="item-name">平台管理</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">实验室建设</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">实验室管理</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">实验室安全</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub">
+            <a href="javascript:;"><span class="item-name">平台管理</span></a>
+            <ul class="sub-nav">
+              <li><a href="javascript:;"><span class="item-name">平台概况</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">平台管理</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">平台考核</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub">
+            <a href="javascript:;"><span class="item-name">实验室建设</span></a>
+            <ul class="sub-nav">
+              <li><a href="javascript:;"><span class="item-name">项目申报</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">项目论证</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">设备论证</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">工作考核</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub">
+            <a href="javascript:;"><span class="item-name">实验室管理</span></a>
+            <ul class="sub-nav">
+              <li><a href="javascript:;"><span class="item-name">实验室概况</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">大仪共享</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">大仪考核</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub">
+            <a href="javascript:;"><span class="item-name">实验室安全</span></a>
+            <ul class="sub-nav">
+              <li><a href="javascript:;"><span class="item-name">日常管理</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">警示教育</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">实验室安全小课堂</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">安全月报</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">工作考核</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="javascript:;"><span class="item-name">分析测试中心</span></a></li>
+          <li class="nav-item"><a href="javascript:;"><span class="item-name">支部工作</span></a></li>
+          <li class="nav-item has-sub">
+            <a href="javascript:;"><span class="item-name">业务说明书</span></a>
+            <ul class="sub-nav">
+              <li><a href="javascript:;"><span class="item-name">平台管理</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">实验室建设</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">实验室管理</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">实验室安全</span></a></li>
+              <li><a href="javascript:;"><span class="item-name">综合管理</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="list.html"><span class="item-name">下载中心</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <div class="x-container">
+
+    <!-- Breadcrumb -->
+    <div class="crumb">
+      <div class="x-wrap">
+        当前位置：<a href="index.html">首页</a><span class="sep">&gt;</span><span class="cur">下载中心</span>
+      </div>
+    </div>
+
+    <!-- List page -->
+    <div class="list-page">
+      <div class="x-wrap">
+
+        <!-- Sidebar -->
+        <div class="side-nav">
+          <div class="sn-tit">下载中心</div>
+          <div class="sn-list">
+            <a class="sn-item on" href="list.html">全部资料</a>
+            <a class="sn-item" href="javascript:;">平台管理</a>
+            <a class="sn-item" href="javascript:;">实验室建设</a>
+            <a class="sn-item" href="javascript:;">实验室管理</a>
+            <a class="sn-item" href="javascript:;">实验室安全</a>
+            <a class="sn-item" href="javascript:;">综合管理</a>
+          </div>
+        </div>
+
+        <!-- News list -->
+        <div class="list-main">
+          <div class="lm-head">
+            <div class="lm-tit">下载中心</div>
+          </div>
+          <div class="news-list">
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">大型精密仪器设备验收报告（非教学科研）</span>
+                <span class="date">2026-10-15</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">长江大学项目验收报告</span>
+                <span class="date">2026-10-26</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">请购大型精密仪器设备可行性论证报告（非教学科研）</span>
+                <span class="date">2026-07-23</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">长江大学物资设备购置项目建设可行性报告</span>
+                <span class="date">2026-10-15</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">长江大学公用房装修改造审批表</span>
+                <span class="date">2026-08-04</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">中华人民共和国危险化学品安全法</span>
+                <span class="date">2026-05-01</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">长江大学实验室建设项目申报书（模板）</span>
+                <span class="date">2026-04-02</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">大型仪器设备开放共享使用申请表</span>
+                <span class="date">2026-06-18</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">实验室危险化学品购置审批表</span>
+                <span class="date">2026-03-15</span>
+              </a>
+            </div>
+            <div class="n-item">
+              <a href="article.html">
+                <svg class="file-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#b51909" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span class="tit">实验室安全准入考试报名登记表</span>
+                <span class="date">2026-09-10</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <span class="pg-info">共 68 条</span>
+            <a href="javascript:;" class="pg-btn">首页</a>
+            <a href="javascript:;" class="pg-arrow">上一页</a>
+            <a href="javascript:;" class="pg-num on">1</a>
+            <a href="javascript:;" class="pg-num">2</a>
+            <a href="javascript:;" class="pg-num">3</a>
+            <a href="javascript:;" class="pg-num">4</a>
+            <a href="javascript:;" class="pg-num">5</a>
+            <a href="javascript:;" class="pg-arrow">下一页</a>
+            <a href="javascript:;" class="pg-btn">尾页</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="x-footer">
+    <div class="x-wrap">
+      <div class="cont">
+        <div class="f_logo">
+          <div class="footer-badge">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="none" stroke="#fff" stroke-width="3"/>
+              <circle cx="50" cy="50" r="40" fill="#fff"/>
+              <text x="50" y="44" text-anchor="middle" fill="#1a4b8c" font-size="20" font-weight="bold" font-family="serif">长江</text>
+              <text x="50" y="68" text-anchor="middle" fill="#1a4b8c" font-size="11" font-family="serif">YANGTZE</text>
+            </svg>
+          </div>
+          <div class="fname">
+            <div class="cn">长江大学</div>
+            <div class="en">YANGTZE UNIVERSITY</div>
+          </div>
+          <div class="fdept">平台与实验室管理处</div>
+        </div>
+        <div class="f_r">
+          <div class="s">版权所有：长江大学 平台与实验室管理处</div>
+          <div class="s">地址：湖北省荆州市荆州区学苑路1号 <span>邮编：434023</span></div>
+          <div class="s">电话：0716-8060116 <span>传真：0716-8060116</span></div>
+          <div class="s">邮箱：ptgl@yangtzeu.edu.cn</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
