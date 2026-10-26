@@ -135,25 +135,23 @@ a:hover { text-decoration: none; }
 .home3-box1, .home3-box3 { width: 440px; flex-shrink: 0; display: flex; flex-direction: column; }
 .home3-box3, .home3-box2 { margin-left: 40px; }
 .home3-box2 { width: 440px; flex-shrink: 0; display: flex; flex-direction: column; }
-.home3-box1 .list, .home3-box3 .list { flex: 1; display: flex; flex-direction: column; }
-.home3-box1 .list .item, .home3-box3 .list .item { flex: 1; min-height: 117px; text-align: center; color: #fff; margin-bottom: 15px; }
-.home3-box1 .list .item:last-child, .home3-box3 .list .item:last-child { margin-bottom: 0; }
-.home3-box1 .list .item a, .home3-box3 .list .item a { display: flex; align-items: center; justify-content: center; height: 100%; gap: 10px; color: #fff; }
-.home3-box1 .list .item .tit, .home3-box3 .list .item .tit { font-size: 20px; color: #fff; }
+.home3-box1 .list { flex: 1; display: flex; flex-direction: column; }
+.home3-box1 .list .item { flex: 1; min-height: 117px; text-align: center; color: #fff; margin-bottom: 15px; }
+.home3-box1 .list .item:last-child { margin-bottom: 0; }
+.home3-box1 .list .item a { display: flex; align-items: center; justify-content: center; height: 100%; gap: 10px; color: #fff; }
+.home3-box1 .list .item .tit { font-size: 20px; color: #fff; }
 .home3-box1 .list .item.i1 { background: #bb1403; }
 .home3-box1 .list .item.i2 { background: #dc7715; }
 .home3-box1 .list .item.i5 { background: #2e7d32; }
-.home3-box3 .list .item.i3 { background: #154ba4; }
-.home3-box3 .list .item.i4 { background: #01979b; }
-.home3-box1 .list .item .wicon, .home3-box3 .list .item .wicon { transition: all 0.6s ease-out; }
-.home3-box1 .list .item:hover .wicon, .home3-box3 .list .item:hover .wicon { transform: translateY(-5px); }
-.home3-box2 .list { margin-top: 15px; flex: 1; display: flex; flex-direction: column; }
-.home3-box2 .list .item { flex: 1; display: flex; align-items: center; overflow: hidden; font-size: 16px; padding: 8px 0; border-bottom: 1px dashed #ccc; }
-.home3-box2 .list .item a { display: flex; align-items: center; overflow: hidden; }
-.home3-box2 .list .item .file-icon { margin-right: 10px; flex-shrink: 0; }
-.home3-box2 .list .item .tit { flex: 1; color: #333333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.home3-box2 .list .item .date { color: #707070; font-family: Arial; margin-left: 15px; }
-.home3-box2 .list .item:hover .tit { color: #b51909; }
+.home3-box1 .list .item .wicon { transition: all 0.6s ease-out; }
+.home3-box1 .list .item:hover .wicon { transform: translateY(-5px); }
+.home3-box2 .list, .home3-box3 .list { margin-top: 15px; flex: 1; display: flex; flex-direction: column; }
+.home3-box2 .list .item, .home3-box3 .list .item { flex: 1; display: flex; align-items: center; overflow: hidden; font-size: 16px; padding: 8px 0; border-bottom: 1px dashed #ccc; }
+.home3-box2 .list .item a, .home3-box3 .list .item a { display: flex; align-items: center; overflow: hidden; width: 100%; }
+.home3-box2 .list .item .file-icon, .home3-box3 .list .item .file-icon { margin-right: 10px; flex-shrink: 0; }
+.home3-box2 .list .item .tit, .home3-box3 .list .item .tit { flex: 1; color: #333333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.home3-box2 .list .item .date, .home3-box3 .list .item .date { color: #707070; font-family: Arial; margin-left: 15px; }
+.home3-box2 .list .item:hover .tit, .home3-box3 .list .item:hover .tit { color: #b51909; }
 
 /* ===== footer ===== */
 .x-footer { background: #b51909; }
@@ -297,9 +295,9 @@ a:hover { text-decoration: none; }
   .home3 .x-wrap { flex-direction: column; }
   .home3-box1, .home3-box2, .home3-box3 { width: 100%; margin: 0 0 30px; }
   .home3-box3, .home3-box2 { margin-left: 0; }
-  .home3-box1 .list .item, .home3-box3 .list .item { min-height: 90px; }
-  .home3-box1 .list .item .tit, .home3-box3 .list .item .tit { font-size: 17px; }
-  .home3-box2 .list .item { font-size: 14px; }
+  .home3-box1 .list .item { min-height: 90px; }
+  .home3-box1 .list .item .tit { font-size: 17px; }
+  .home3-box2 .list .item, .home3-box3 .list .item { font-size: 14px; }
 
   /* ----- footer ----- */
   .x-footer .cont { flex-direction: column; align-items: flex-start; padding-top: 25px; padding-bottom: 25px; }
